@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseyas</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Generador de Contraseyas</h1>
+        <div class="generador">
+            <label for="length">Lonitud de la contraseya</label>
+            <input type="number" id="length" min="4" max="32" value="16" />
+
+            <label for="">
+                <input type="checkbox" id="includeLower" checked>
+                Incluir Minusculas
+            </label>
+
+            <label for="">
+                <input type="checkbox" id="includeUpper" checked>
+                Incluir Mayusculas
+            </label>
+
+            <label for="">
+                <input type="checkbox" id="includeNumbers" checked>
+                Incluir Numeros
+            </label>
+
+            <label for="">
+                <input type="checkbox" id="includeSymbols" checked>
+                Incluir Simbolos
+            </label>
+
+            <button id="generateBtn">Generar Contraseyas</button>
+            <textarea name="" id="passwordOutput" readonly></textarea>
+        </div>
+        <script src="/js/index.js"></script>
+    </div>
+    
+</body>
+
+</html>
